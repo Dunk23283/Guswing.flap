@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>GUSTWING: ULTIMATE FLIGHT</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="cockpit-cracks"></div>
+    <div id="ui-container">
+        <!-- Splash Screen -->
+        <div id="splash-screen" class="overlay active">
+            <div class="logo-container">
+                <div class="wings"></div>
+                <h1 class="glitch" data-text="GUSTWING">GUSTWING</h1>
+                <p class="subtitle">ULTIMATE SKY RUSH</p>
+            </div>
+            <button id="enter-button" class="btn-premium main-tap anim-click">INITIALIZE SYSTEM</button>
+        </div>
+
+        <!-- Main Menu -->
+        <div id="main-menu" class="overlay">
+            <div class="menu-v-stack">
+                <div class="mini-logo central">
+                    <div class="wings small"></div>
+                    <h2 class="glow-text">GUSTWING</h2>
+                    <p id="menu-best-container">BEST CLEARANCE: <span id="menu-best-score">000</span></p>
+                </div>
+
+                <div class="menu-actions">
+                    <button id="launch-button" class="btn-action primary anim-click">LAUNCH MISSION</button>
+                    <button id="hangar-button" class="btn-action anim-click">THE HANGAR</button>
+                    <button id="gamemodes-button" class="btn-action anim-click">GAMEMODES</button>
+                    <button id="maps-button" class="btn-action anim-click">MAPS</button>
+                    <button id="info-button" class="btn-action anim-click">INFO</button>
+                    <button id="settings-button" class="btn-action anim-click">SETTINGS</button>
+                    <button id="exit-button" class="btn-action danger anim-click">EXIT GAME</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hangar Menu -->
+        <div id="hangar-menu" class="overlay">
+            <div class="menu-card glass protocol-card">
+                <h2 class="card-title">THE HANGAR</h2>
+                <div class="hangar-tabs">
+                    <button class="btn-sub active anim-click" id="tab-skins">SKINS</button>
+                    <button class="btn-sub anim-click" id="tab-lasers">LASERS</button>
+                </div>
+                <div id="hangar-grid" class="mode-grid map-scroller">
+                    <!-- Items injected via JS -->
+                </div>
+                <button id="close-hangar" class="btn-action anim-click">BACK</button>
+            </div>
+        </div>
+
+        <!-- Map Selection -->
+        <div id="maps-menu" class="overlay">
+            <div class="menu-card glass protocol-card">
+                <h2 class="card-title">SECTOR SELECTION</h2>
+                <div class="mode-grid map-scroller">
+                    <button class="btn-mode active anim-click" data-map="void">
+                        <span class="mode-title">VOID</span>
+                        <span class="mode-desc">Standard sky-high patrol sector.</span>
+                    </button>
+                    <button class="btn-mode anim-click" data-map="forest">
+                        <span class="mode-title">FOREST</span>
+                        <span class="mode-desc">Dense jungle with low-poly peaks.</span>
+                    </button>
+                    <button class="btn-mode anim-click" data-map="sneek">
+                        <span class="mode-title">SNEEK</span>
+                        <span class="mode-desc">Cybernetic night run with EMP events.</span>
+                    </button>
+                    <button class="btn-mode anim-click" data-map="zenith">
+                        <span class="mode-title">ZENITH</span>
+                        <span class="mode-desc">Sunset mountain range with golden fog.</span>
+                    </button>
+                    <button class="btn-mode anim-click" data-map="volcano">
+                        <span class="mode-title">VOLCANO</span>
+                        <span class="mode-desc">Extreme hazard. Lava spikes active.</span>
+                    </button>
+                    <button class="btn-mode anim-click" data-map="cyber">
+                        <span class="mode-title">CYBER</span>
+                        <span class="mode-desc">Premium digital void with data rain.</span>
+                    </button>
+                    <button class="btn-mode anim-click" data-map="abyss">
+                        <span class="mode-title">ABYSS</span>
+                        <span class="mode-desc">Bioluminescent trench with pressure mines.</span>
+                    </button>
+                    <button class="btn-mode anim-click" data-map="glacier">
+                        <span class="mode-title">GLACIER</span>
+                        <span class="mode-desc">Frozen blizzards and falling ice spikes.</span>
+                    </button>
+                </div>
+                <button id="close-maps" class="btn-action anim-click">BACK</button>
+            </div>
+        </div>
+
+        <!-- Gamemodes -->
+        <div id="gamemodes-menu" class="overlay">
+            <div class="menu-card glass protocol-card">
+                <h2 class="card-title">COMBAT PROTOCOLS</h2>
+                <div class="mode-grid">
+                    <button class="btn-mode active anim-click" data-mode="normal">
+                        <span class="mode-title">STANDARD PATROL</span>
+                        <span class="mode-desc">Balanced flight parameters.</span>
+                    </button>
+                    <button class="btn-mode anim-click" data-mode="boss_titan">
+                        <span class="mode-title">BOSS TITAN</span>
+                        <span class="mode-desc">Heavy armor. 2000% threat.</span>
+                    </button>
+                    <button class="btn-mode anim-click" data-mode="sentinel">
+                        <span class="mode-title">SENTINEL BOSS</span>
+                        <span class="mode-desc">Immediate flagship encounter.</span>
+                    </button>
+                    <button class="btn-mode anim-click" data-mode="drones">
+                        <span class="mode-title">TACTICAL DRONES</span>
+                        <span class="mode-desc">No gates. Infinite combat.</span>
+                    </button>
+                </div>
+                <button id="close-gamemodes" class="btn-action anim-click">BACK</button>
+            </div>
+        </div>
+
+        <!-- Info Menu -->
+        <div id="info-menu" class="overlay">
+            <div class="menu-card glass protocol-card">
+                <h2 class="card-title">MISSION DATA</h2>
+                <div class="mode-grid">
+                    <div class="btn-mode">
+                        <span class="mode-title">SHIP MODEL</span>
+                        <span class="mode-desc">GUSTWING MK-6 "PHOENIX"</span>
+                    </div>
+                    <div class="btn-mode">
+                        <span class="mode-title">ARMAMENT</span>
+                        <span class="mode-desc">6x CONTINUOUS BEAM LASERS</span>
+                    </div>
+                    <div class="btn-mode">
+                        <span class="mode-title">CONTROLS [W/SPACE]</span>
+                        <span class="mode-desc">Leap forward and climb alt.</span>
+                    </div>
+                    <div class="btn-mode">
+                        <span class="mode-title">CONTROLS [F/E]</span>
+                        <span class="mode-desc">Trigger Sonic Overdrive / Missiles.</span>
+                    </div>
+                </div>
+                <button id="close-info" class="btn-action anim-click">BACK</button>
+            </div>
+        </div>
+
+        <!-- Settings Menu -->
+        <div id="settings-menu" class="overlay">
+            <div class="menu-card glass protocol-card">
+                <h2 class="card-title">SYSTEM CONFIG</h2>
+                <div class="mode-grid">
+                    <button id="toggle-sound" class="btn-mode anim-click">
+                        <span class="mode-title">AUDIO ENGINE</span>
+                        <span id="sound-status" class="mode-desc">ENABLED</span>
+                    </button>
+                    <div class="btn-mode" style="cursor: default;">
+                        <span class="mode-title">GRAPHICS PRESET</span>
+                        <div class="gfx-grid">
+                            <button class="btn-gfx anim-click" data-gfx="extreme-low">EXTREME LOW</button>
+                            <button class="btn-gfx anim-click" data-gfx="low">LOW</button>
+                            <button class="btn-gfx anim-click" data-gfx="medium">MEDIUM</button>
+                            <button class="btn-gfx anim-click" data-gfx="high">HIGH</button>
+                            <button class="btn-gfx anim-click" data-gfx="extreme">EXTREME</button>
+                            <button class="btn-gfx anim-click" data-gfx="very-extreme">VERY EXTREME</button>
+                            <button class="btn-gfx active anim-click" data-gfx="ultra-pro-max">ULTRA PRO MAX</button>
+                        </div>
+                    </div>
+                </div>
+                <button id="close-settings" class="btn-action anim-click">BACK</button>
+            </div>
+        </div>
+
+        <!-- HUD -->
+        <div id="hud" style="display: none;">
+            <div class="hud-glass-grid"></div>
+
+            <div class="hud-container">
+                <div class="hud-top-left">
+                    <div class="hud-module glass">
+                        <span class="hud-label">SCORE</span>
+                        <span id="score" class="big-val">00</span>
+                    </div>
+                </div>
+
+                <div class="hud-top-right">
+                    <div class="hud-module glass">
+                        <span class="hud-label">BEST</span>
+                        <span id="best-score" class="big-val">00</span>
+                    </div>
+                    <button id="pause-button" class="btn-pause glass-circle anim-click">II</button>
+                </div>
+
+                <div class="hud-bottom-left">
+                    <div class="hud-module glass alt-mod">
+                        <span class="hud-label">ALTITUDE</span>
+                        <div class="alt-scale">
+                            <div id="alt-indicator" class="alt-mark"></div>
+                        </div>
+                        <span id="alt-value" class="big-val">00</span>
+                    </div>
+                </div>
+
+                <div class="hud-bottom-right">
+                    <div class="hud-module glass velocity-mod">
+                        <span class="hud-label">VELOCITY</span>
+                        <div class="val-group">
+                            <span id="speed-value">000</span>
+                            <span class="unit">KTS</span>
+                        </div>
+                    </div>
+
+                    <div class="hud-module glass ability-mod">
+                        <span class="hud-label">SONIC BOOST <span id="ability-percent">100%</span></span>
+                        <div id="ability-fill-track" class="mini-track">
+                            <div id="ability-fill" class="mini-fill"></div>
+                        </div>
+                        <span id="ability-ready-text" class="status-text">READY (F)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="crosshair"></div>
+        </div>
+
+        <!-- Game Over -->
+        <div id="game-over" class="overlay">
+            <div class="death-card menu-card glass">
+                <h1 class="death-title">MISSION FAILED</h1>
+                <div class="stat-block">
+                    <span class="label">FINAL SCORE</span>
+                    <span id="final-score" class="value">0</span>
+                </div>
+                <div class="death-actions">
+                    <button id="respawn-button" class="btn-action primary anim-click">RESPAWN</button>
+                    <button id="exit-to-menu-button" class="btn-action anim-click">ABORT TO MENU</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pause Menu -->
+        <div id="pause-menu" class="overlay">
+            <div class="menu-card pause-card glass">
+                <h1 class="pause-title">SYSTEM PAUSED</h1>
+                <div class="menu-actions">
+                    <button id="resume-button" class="btn-action primary anim-click">RESUME FLIGHT</button>
+                    <button id="restart-button-pause" class="btn-action anim-click">RESTART MISSION</button>
+                    <button id="pause-maps-button" class="btn-action anim-click">CHANGE SECTOR</button>
+                    <button id="pause-modes-button" class="btn-action anim-click">CHANGE PROTOCOL</button>
+                    <button id="pause-exit-button" class="btn-action danger anim-click">EXIT TO COMMAND</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Resume Countdown -->
+        <div id="countdown-overlay" class="overlay">
+            <div class="countdown-container">
+                <span class="timer-label">RESUMING IN</span>
+                <span id="resume-countdown-val" class="timer-value">5</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="DevTools.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
