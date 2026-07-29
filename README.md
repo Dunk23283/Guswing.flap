@@ -7,7 +7,7 @@
 ## 📈 Version History
 
 ### **CURRENT v1.20** 🚀 (New Update)
-**Released:** June 2024
+**Released:** June 2026
 **Author:** Made By Moey
 
 #### **New Features & Improvements:**
