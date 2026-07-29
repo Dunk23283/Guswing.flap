@@ -6,35 +6,30 @@
 
 ## 📈 Version History
 
-### **CURRENT v1.20** 🚀 (New Update)
-**Released:** June 2026
+### **CURRENT v1.24** 🚀 (The Fortress Update)
+**Released:** June 2024
 **Author:** Made By Moey
 
-#### **New Features & Improvements:**
-- **The Hangar Expansion**: Now featuring **14 exclusive high-poly ships** with unique 3D geometries (curved, sharp, massive, divine, and mechanical shapes).
-- **Elite Freedom**: All skins (including **Royal Guard** and **Gold Master**), laser colors, and engine trails are now **100% FREE and OWNED** by default.
-- **New Sector: Bengale**: Deploy to a professionally modeled golden-yellow desert map with temple-like hazards.
+#### **Supreme Security & Anti-Cheat:**
+- **32-Point Anti-Cheat Matrix**: Deployed a high-intensity security core monitoring 32 unique integrity layers.
+- **Function Hook Detection**: Detects and kills unauthorized overrides of `requestAnimationFrame`, `fetch`, `setInterval`, and more.
+- **Speedhack Mitigation**: Real-time comparison between system time and high-resolution performance timers.
+- **Debugger Traps**: Advanced execution-pause detection that triggers a system shutdown if manual inspection is detected.
+- **Trusted Input Protocol**: Validates all mouse and keyboard events—physical human input only.
+- **Automation Block**: Headless browser and WebDriver detection active.
+- **DOM Integrity Watch**: MutationObservers prevent unauthorized cheat overlays.
+- **Kernel Failure 404**: Any breach attempt instantly triggers a full-screen red-alert **SYSTEM INTEGRITY BREACH** and reboots the browser session.
+
+#### **v1.20 Legacy Features:**
+- **The Hangar Expansion**: Featuring **14 exclusive high-poly ships** (curved, sharp, massive, divine geometries).
+- **Elite Freedom**: All skins (including **Royal Guard** and **Gold Master**), laser colors, and trails are **100% FREE and OWNED**.
+- **New Sector: Bengale**: Deploy to a premium golden desert map with temple-like hazards.
 - **Dual Ability System**:
-  - **[F] Sonic Boost**: 10 seconds of mythical blue invincibility and speed.
-  - **[G] Volcano Speed**: 10 seconds of raw orange thrust surge.
-- **Dynamic Difficulty**: Reaching **85 Gates Cleared** triggers "Pulsator Mode" where rings scale up and down dynamically.
-- **Performance Grading**: Real-time evaluation of clearance accuracy (**PERFECT**, **NOT BAD**, **BAD**, **NICE TRY**).
-- **Cinematic HUD**: Restored the original side-stack/four-corner layout with enhanced glassmorphism and an animated 3D scanning grid.
-- **Combat Buff**: 6x Continuous Beam Lasers now update their color based on your hangar selection in real-time.
-
-#### **Bug Fixes & Technical Issues Resolved:**
-- **Physics Fix**: Touching any part of a ring now triggers an explosion (Center clearance required).
-- **Ability Fix**: Ability durations are now strictly 10 seconds with a mandatory recharge period (No more infinite boost).
-- **Stability Fix**: Resolved "Black Screen" crash caused by type-mismatches in customization data.
-- **HUD Fix**: Corrected scaling of the main menu and added premium scrollbars to sub-menus for smaller resolutions.
-- **Collision Fix**: Recalibrated the safety hole radius to match the physical 3D ring model exactly.
-- **Audio Sync**: Hangar-specific mechanical ambient music now plays exclusively while customizing.
-
-#### **Supreme Security Hardening:**
-- **Triple-Layer Lock**: Integrated `DevTools.js`, `AntiCheat.js`, and hexadecimal runtime masking.
-- **Kernel Failure Protocol**: Any tampering with internal variables or unauthorized system access triggers a full-screen **ERROR 404: INTEGRITY BREACH** and reboots the game.
-- **Input Blocking**: Shortcuts (F12, Ctrl+Shift+I, etc.) and Right-Click are fully restricted to protect source integrity.
-- **Code Scrub**: Every single comment has been removed from the source files to deter reverse-engineering.
+  - **[F] Sonic Boost**: 10s of mythical blue invincibility and speed.
+  - **[G] Volcano Speed**: 10s of raw orange thrust surge.
+- **Dynamic Difficulty**: Score 85+ triggers "Pulsator Mode" (pulsating ring challenges).
+- **Performance Grading**: Real-time clearance feedback (**PERFECT**, **NOT BAD**, etc.).
+- **Refined HUD**: Original side-stack layout restored with animated 3D scanning grids.
 
 ---
 
