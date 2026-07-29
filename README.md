@@ -1,66 +1,66 @@
-# 🚀 GUSTWING: ULTIMATE FLIGHT
+# <p align="center">🚀 GUSTWING: ULTIMATE FLIGHT 🚀</p>
 
-**GUSTWING** is a high-octane, 3D cyberpunk flight simulator built with Three.js. Experience intense combat, customizable ships, and unique planetary sectors.
+<p align="center">
+  <img src="https://img.shields.io/badge/Version-1.28-cyan?style=for-the-badge&logo=rocket" />
+  <img src="https://img.shields.io/badge/Engine-Three.js-blue?style=for-the-badge&logo=three.js" />
+  <img src="https://img.shields.io/badge/Status-Titan_Shield_Active-green?style=for-the-badge&logo=shield" />
+  <img src="https://img.shields.io/badge/Author-Made_By_Moey-orange?style=for-the-badge" />
+</p>
 
 ---
 
-## 📈 Version History
+## 💎 THE PREMIER 3D FLIGHT SIMULATOR
+**GUSTWING** is a high-octane, cyberpunk flight experience. Built with a custom Three.js engine, it features ultra-high-fidelity 3D geometry, 14 elite pilotable ships, and the most advanced anti-cheat matrix ever deployed in a browser game.
 
-### **CURRENT v1.24** 🚀 (The Fortress Update)
-**Released:** June 2024
-**Author:** Made By Moey
+### 🌌 EXPLORE THE SECTORS
+| Sector | Description |
+| :--- | :--- |
+| **BENGALE** | 🏜️ The new Golden Desert. Ancient temples and high-speed hazards. |
+| **VOLCANO** | 🌋 Molten lava spikes and thermal updrafts. |
+| **ABYSS** | 🌊 Deep-sea bioluminescent navigation. |
+| **GLACIER** | ❄️ Razor-sharp ice formations and blinding fogs. |
+| **CYBER** | 💾 Neon data-cubes and digital infrastructure. |
 
-#### **Supreme Security & Anti-Cheat:**
-- **32-Point Anti-Cheat Matrix**: Deployed a high-intensity security core monitoring 32 unique integrity layers.
-- **Function Hook Detection**: Detects and kills unauthorized overrides of `requestAnimationFrame`, `fetch`, `setInterval`, and more.
-- **Speedhack Mitigation**: Real-time comparison between system time and high-resolution performance timers.
-- **Debugger Traps**: Advanced execution-pause detection that triggers a system shutdown if manual inspection is detected.
-- **Trusted Input Protocol**: Validates all mouse and keyboard events—physical human input only.
-- **Automation Block**: Headless browser and WebDriver detection active.
-- **DOM Integrity Watch**: MutationObservers prevent unauthorized cheat overlays.
-- **Kernel Failure 404**: Any breach attempt instantly triggers a full-screen red-alert **SYSTEM INTEGRITY BREACH** and reboots the browser session.
+---
 
-#### **v1.20 Legacy Features:**
-- **The Hangar Expansion**: Featuring **14 exclusive high-poly ships** (curved, sharp, massive, divine geometries).
-- **Elite Freedom**: All skins (including **Royal Guard** and **Gold Master**), laser colors, and trails are **100% FREE and OWNED**.
-- **New Sector: Bengale**: Deploy to a premium golden desert map with temple-like hazards.
-- **Dual Ability System**:
-  - **[F] Sonic Boost**: 10s of mythical blue invincibility and speed.
+## 📊 VERSION HISTORY
+
+### **v1.28 — THE TITAN SHIELD UPDATE** 🛡️
+**Released:** July 2026
+**Lead Architect:** Made By Moey
+
+#### **⚡ New Gameplay Mechanics:**
+- **Dynamic Pulsator System**: Once you clear **85 Gates**, the universe enters Overdrive. Rings physically shrink and grow in real-time.
+- **Dual Overdrive Core**:
+  - **[F] Sonic Boost**: 10s of mythical blue invincibility.
   - **[G] Volcano Speed**: 10s of raw orange thrust surge.
-- **Dynamic Difficulty**: Score 85+ triggers "Pulsator Mode" (pulsating ring challenges).
-- **Performance Grading**: Real-time clearance feedback (**PERFECT**, **NOT BAD**, etc.).
-- **Refined HUD**: Original side-stack layout restored with animated 3D scanning grids.
+- **14-Ship Elite Hangar**: Every high-poly ship (**Vanguard Zero**, **Wraith Wing**, **Gold Master**, etc.) is now **FREE & OWNED**.
+
+#### **🔒 Supreme Security Overhaul:**
+- **Kernel Obfuscation**: The entire JS engine has been scrambled into a hexadecimal labyrinth to prevent source theft.
+- **32-Point Anti-Cheat Matrix**: Monitors hook detection, speedhacks, and resource siphoning.
+- **Auto-Nuke Protocol**: Attempting to debug or format the source triggers a **System Failure** warning.
+
+#### **🎨 Visual Refinements:**
+- **Expertise UI**: Rescaled the main menu for a perfect cinematic fit.
+- **Glassmorphism 2.0**: Enhanced background grids and corner-stack HUD modules.
+- **Performance Grading**: Real-time evaluation (**PERFECT**, **NOT BAD**) for precision flight.
 
 ---
 
-### **v1.10**
-- Initial public release on GitHub.
-- 8 standard planetary sectors.
-- Basic Hangar system.
-- Initial Glassmorphic HUD implementation.
-
----
-
-## ⌨️ Controls
+## ⌨️ PILOT CONTROLS
 | Action | Key |
 | :--- | :--- |
-| **Thrust / Jump** | `W` or `Space` or `Left Click` |
-| **Beam Cannons** | `Right Click (Hold)` |
-| **Tactical Missiles** | `E` |
+| **Thrust / Jump** | `W` / `Space` / `Mouse1` |
 | **Sonic Overdrive** | `F` (10s Blue Invincibility) |
-| **Volcano Speed** | `G` (10s Orange Surge) |
+| **Volcano Surge** | `G` (10s Orange Speed) |
+| **Beam Cannons** | `Right Click` (Hold) |
+| **Tactical Missiles** | `E` |
 | **System Pause** | `ESC` |
 
-## 🛠️ Technology Stack
-- **Engine**: Three.js (WebGL)
-- **Styling**: Pure CSS3 with Backdrop Blurs (Glassmorphism)
-- **Audio**: Web Audio API (Procedural SFX)
-- **Storage**: LocalStorage for persistent ship configurations.
-
-## 🚀 Quick Start
-1. Clone the repository.
-2. Open `index.html` in any modern web browser (Google Chrome recommended).
-3. Click **INITIALIZE SYSTEM** and prepare for launch.
-
 ---
-**Made By Moey** ⚡🔥
+
+<p align="center">
+  <b>Developed by Moey ⚡🔥</b><br>
+  <i>Forged in the fires of the Zenith Sector.</i>
+</p>
